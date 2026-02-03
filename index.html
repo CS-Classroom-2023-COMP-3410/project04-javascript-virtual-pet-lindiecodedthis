@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>baby pet virtual pet game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+
+
+  <!-- effects -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="page">
+    <h1>		. ｡ ･ﾟ °˖✧  baby pet  ✧˖° ･ﾟ ･｡ .</h1>
+    <p class="subtitle">keep ur baby pet happy & healthy</p>
+
+    <div class="card">
+      <div class="pet-section">
+
+        <p class="tip" id="tipText">tip: if baby gets too hungry, their health will go down</p>
+
+        <div id="pet" class="pet">
+          <div class="badge" id="moodBadge">Happy</div>
+
+          <div class="face">
+            <div class="eyes">
+              <span class="eye"></span>
+              <span class="eye"></span>
+            </div>
+            <div class="mouth" id="mouth">﹀</div>
+          </div>
+        </div>
+
+
+        <div class="buttons">
+          <button id="feedBtn"> feed</button>
+          <button id="playBtn"> play</button>
+          <button id="sleepBtn"> sleep / wake</button>
+          <button id="resetBtn" class="reset">reset</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>status</h2>
+
+      <div class="grid">
+        <div class="stat">
+          <div class="label">mood</div>
+          <div class="value" id="moodText">Happy</div>
+        </div>
+
+        <div class="stat">
+          <div class="label">health</div>
+          <div class="value" id="healthText">100</div>
+          <div class="bar"><span id="healthBar"></span></div>
+        </div>
+
+        <div class="stat">
+          <div class="label">hunger</div>
+          <div class="value" id="hungerText">20</div>
+          <div class="bar"><span id="hungerBar"></span></div>
+        </div>
+
+        <div class="stat">
+          <div class="label">energy</div>
+          <div class="value" id="energyText">80</div>
+          <div class="bar"><span id="energyBar"></span></div>
+        </div>
+
+        <div class="stat">
+          <div class="label">happiness</div>
+          <div class="value" id="happyText">75</div>
+          <div class="bar"><span id="happyBar"></span></div>
+        </div>
+
+        <div class="stat">
+          <div class="label">sleeping?</div>
+          <div class="value" id="sleepText">No</div>
+        </div>
+      
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
